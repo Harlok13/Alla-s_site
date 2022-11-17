@@ -12,39 +12,64 @@
 .cont{
     width: 100%;
     display: grid;
-    height: 1600px;
+    height: 1540px;
     margin: 0 auto;
     grid-template-rows: 100px 300px 1000px 100px;
     grid-row-gap: 13px;
     grid-column-gap: 13px;
     grid-template-columns: 24.34% 24.34% 24.34% 24.34%;
     background: black;
-    grid-template-areas:  "prof head head head" "prof nav nav nav" "as . . . "
+    grid-template-areas:  "prof head head head" "prof nav nav nav" "as main main main" "foot foot foot foot"
 }
 header{
   grid-area: head;
   background: green;
+  text-align: center;
 }
 .profile{
 grid-area:prof;
 background: red;
+text-align: center;
+padding-top: 150px;
 }
 nav{
 grid-area: nav;
 background: blue;
+display: grid;
 }
 aside{
 grid-area: as;
 background: orange;
 }
+main{
+grid-area: main;
+background: purple;
+}
+footer{
+grid-area:foot;
+background: green;
+}
+.img1{
+grid-area: im1;
+}
+.img2{
+grid-area: im2;
+}
+.img3{
+grid-area: im3;
+}
   </style>
 </head>
 <body>
   <div class="cont">
-    <header><h1>Hello</h1></header>
-    <div class="profile"></div>
+    <header><h1>header</h1></header>
+    <div class="profile"><h1>Profile</h1></div>
     <aside></aside>
-    <nav></nav>
+    <nav>
+      <div class="img1"></div>
+      <div class="img2"></div>
+      <div class="img3"></div>
+    </nav>
     <main></main>
     <footer></footer>
   </div>
