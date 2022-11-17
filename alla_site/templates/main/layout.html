@@ -1,3 +1,4 @@
+<!--{% load static %}-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,9 +6,33 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--  <link rel="stylesheet" type="text/css" href="{% 'main/css/style.css' %}">-->
   <title>Document</title>
+  <style>
+.cont{
+    width: 100%;
+    display: grid;
+    height: 1500px;
+    margin: 0 auto;
+    grid-template-rows: 100px 300px 1100px;
+    grid-template-column: 25% 25% 25% 25%;
+    background: black;
+}
+header{
+  width: 78%;
+  height: 100px;
+  background: green;
+  margin-left: 320px;
+  </style>
 </head>
 <body>
-
+  <div class="cont">
+    <header><h1>Hello</h1></header>
+    <div class="profile"></div>
+    <aside></aside>
+    <nav></nav>
+    <main></main>
+    <footer></footer>
+  </div>
 </body>
 </html>
