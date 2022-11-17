@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+
 
 class Posts(models.Model):
     """Посты"""
@@ -14,6 +16,9 @@ class Posts(models.Model):
     def __str__(self):
         return self.title
 
+    def get_absolute_url(self):
+        return reverse('post', kwargs={'post_slug': self.slug})
+
     class Meta:
         verbose_name = 'Статья'
         verbose_name_plural = 'Статьи'
@@ -27,6 +32,9 @@ class Posts(models.Model):
 
         def __str__(self):
             return self.name
+
+        def get_absolute_url(self):
+            return reverse('category', kwargs={'category_slug': self.slug})
 
         class Meta:
             verbose_name = 'Категория'
