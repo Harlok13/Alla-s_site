@@ -12,17 +12,31 @@
 .cont{
     width: 100%;
     display: grid;
-    height: 1500px;
+    height: 1600px;
     margin: 0 auto;
-    grid-template-rows: 100px 300px 1100px;
-    grid-template-column: 25% 25% 25% 25%;
+    grid-template-rows: 100px 300px 1000px 100px;
+    grid-row-gap: 13px;
+    grid-column-gap: 13px;
+    grid-template-columns: 24.34% 24.34% 24.34% 24.34%;
     background: black;
+    grid-template-areas:  "prof head head head" "prof nav nav nav" "as . . . "
 }
 header{
-  width: 78%;
-  height: 100px;
+  grid-area: head;
   background: green;
-  margin-left: 320px;
+}
+.profile{
+grid-area:prof;
+background: red;
+}
+nav{
+grid-area: nav;
+background: blue;
+}
+aside{
+grid-area: as;
+background: orange;
+}
   </style>
 </head>
 <body>
