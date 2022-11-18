@@ -20,12 +20,17 @@
 <body>
   <div class="cont">
 {#    Header#}
-    <header><h1>header</h1></header>
+    <header>
+      {% block mainmenu %}
+        {% show_menu %}
+      {% endblock mainmenu %}
+      <h1>header</h1>
+    </header>
 {#    Profile#}
     <div class="profile"><div class="cirkel"></div><h1>Alla Krasnova</h1><p>МГУ им.твоего сердечка</p></div>
 {#    Aside#}
     <aside>
-      {% show_menu %}
+
       <h1>aside</h1>
     </aside>
 {#    Nav#}
