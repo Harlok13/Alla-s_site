@@ -12,3 +12,18 @@ def show_category(request):
 
 def show_post(request):
     return HttpResponse('пост')
+
+def about_me(request):
+    return HttpResponse('обо мне')
+
+def practice(request):
+    return HttpResponse('мои практики')
+
+def articles(request):
+    return HttpResponse('мои статьи')
+
+def login(request):
+    return HttpResponse('вход')
+
+def registration(request):
+    return HttpResponse('регистрация')
