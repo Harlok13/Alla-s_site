@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home_page(request):
-    return render(request, 'main/index.html')
+    return render(request, 'main/layout.html')
 
 def show_category(request):
     return HttpResponse('категории')
