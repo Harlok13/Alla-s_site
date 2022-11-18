@@ -2,7 +2,10 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home_page(request):
-    return render(request, 'main/layout.html')
+    context = {
+        'title': 'Главная страница'
+    }
+    return render(request, 'main/layout.html', context=context)
 
 def show_category(request):
     return HttpResponse('категории')

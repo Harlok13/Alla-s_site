@@ -1,114 +1,30 @@
 {% load static %}
+
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name= "viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" href="{% static 'main/css/styles.css' %}" rel="stylesheet" />
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <title>Document</title>
-  <style>
-body{
-  background: black;
-}
-.cont{
-    width: 100%;
-    display: grid;
-    height: 1540px;
-    margin: 0 auto;
-    grid-template-rows: 100px 300px 1000px 100px;
-    grid-row-gap: 13px;
-    grid-column-gap: 13px;
-    grid-template-columns: 24.34% 24.34% 24.34% 24.34%;
-    grid-template-areas:  "prof head head head" "prof nav nav nav" "as main main main" "foot foot foot foot";
-}
-header{
-  grid-area: head;
-  text-align: center;
-  border: 1px solid white;
-  color: white;
-    background: black;
-}
-.profile{
-grid-area:prof;
-text-align: center;
-border: 1px solid white;
-color: white;
-background: black;
-}
-nav{
-grid-area: nav;
-display: grid;
-grid-template-columns: 30% 30% 30%;
-justify-content: space-around;
-grid-column-gap: 5px;
-padding-top: 20px;
-grid-template-rows: 250px;
-grid-template-areas: "im1 im2 im3";
-border: 1px solid white;
-color: white;
-background: black;
-}
-aside{
-grid-area: as;
-text-align:center;
-padding-top: 450px;
-border: 1px solid white;
-color: white;
-background: black;
-}
-main{
-grid-area: main;
-text-align: center;
-padding-top:450px;
-border: 1px solid white;
-color: white;
-background: black;
-}
-footer{
-grid-area:foot;
-text-align:center;
-border: 1px solid white;
-color: white;
-background: black;
-}
-.img1{
-grid-area: im1;
-border: 1px solid white;
-text-align:center;
-padding-top:80px;
-}
-.img2{
-grid-area: im2;
-border: 1px solid white;
-text-align:center;
-padding-top:80px;
-}
-.img3{
-grid-area: im3;
-border: 1px solid white;
-text-align:center;
-padding-top:80px;
-}
-.cirkel{
-  width: 30%;
-  margin-left: 35%;
-  margin-top: 15%;
-  height: 100px;
-  border-radius: 100%;
-  border: 1px solid white;
-}
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <title>{{ title }}</title>
 </head>
+
+
 <body>
   <div class="cont">
+{#    Header#}
     <header><h1>header</h1></header>
+{#    Profile#}
     <div class="profile"><div class="cirkel"></div><h1>Alla Krasnova</h1><p>МГУ им.твоего сердечка</p></div>
+{#    Aside#}
     <aside><h1>aside</h1></aside>
+{#    Nav#}
     <nav>
       <div class="img1"><h1>img1</h1></div>
       <div class="img2"><h1>img2</h1></div>
@@ -117,10 +33,15 @@ padding-top:80px;
       <i class="bi bi-1-circle-fill"></i>
       <img src="" alt="">
       <i class="bi bi-1-square"></i>
-
     </nav>
+{#    Main#}
     <main><h1>main</h1></main>
+{#    Footer#}
     <footer><h1>footer</h1></footer>
   </div>
+
+{% block content %}
+{% endblock content %}
+
 </body>
 </html>
