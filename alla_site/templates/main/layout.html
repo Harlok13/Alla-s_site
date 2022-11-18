@@ -27,16 +27,13 @@
       {% block mainmenu %}
         {% show_menu %}
       {% endblock mainmenu %}
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
     </header>
 {#    Profile#}
-    <div class="profile"><div class="cirkel"></div><h1>Alla Krasnova</h1><p>МГУ им.твоего сердечка</p></div>
+    <div class="profile">
+        <div class="cirkel"><img class="imA" src="{% static 'main/images/Alla.jpg' %}"></div>
+        <h1>Alla Krasnova</h1>
+        <p>МГУ им.твоего сердечка</p>
+    </div>
 {#    Aside#}
     <aside style="padding-top: 45px;">
      <ul class="list-articles">
@@ -57,7 +54,7 @@
     </aside>
 {#    Nav#}
     <nav>
-      <div class="img1" style="padding-top: 0px"><img style="height: 6.5cm" src="{% static 'main/images/i1.jpg' %}" alt=""></div>
+      <div class="img1" style="padding-top: 0px"><img class="im5" style="height: 6.5cm" src="{% static 'main/images/i1.jpg' %}" alt=""><h2>Aboba</h2></div>
       <div class="img2"><h1>img2</h1></div>
       <div class="img3"><h1>img3</h1></div>
 
