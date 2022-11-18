@@ -1,4 +1,5 @@
 {% load static %}
+{% load main_tags %}
 
 <!doctype html>
 <html lang="en">
@@ -23,7 +24,10 @@
 {#    Profile#}
     <div class="profile"><div class="cirkel"></div><h1>Alla Krasnova</h1><p>МГУ им.твоего сердечка</p></div>
 {#    Aside#}
-    <aside><h1>aside</h1></aside>
+    <aside>
+      {% show_menu %}
+      <h1>aside</h1>
+    </aside>
 {#    Nav#}
     <nav>
       <div class="img1"><h1>img1</h1></div>

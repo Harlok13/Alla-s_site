@@ -16,7 +16,7 @@ def show_post(request):
 def about_me(request):
     return HttpResponse('обо мне')
 
-def practice(request):
+def practices(request):
     return HttpResponse('мои практики')
 
 def articles(request):
@@ -27,3 +27,6 @@ def login(request):
 
 def registration(request):
     return HttpResponse('регистрация')
+
+def consultation(request):
+    return HttpResponse('консультации')
