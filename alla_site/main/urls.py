@@ -11,5 +11,6 @@ urlpatterns = [
     path('articles/', articles, name='articles'),
     path('consultation/', consultation, name='consultation'),
     path('login/', login, name='login'),
-    path('registration/', registration, name='registration')
+    path('registration/', registration, name='registration'),
+    path('post/<slug:post_slug>/', show_post, name='show_post')
 ]

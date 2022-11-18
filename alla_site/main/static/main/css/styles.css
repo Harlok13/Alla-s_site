@@ -7,9 +7,10 @@ body{
     height: 1540px;
     margin: 0 auto;
     grid-template-rows: 100px 300px 1000px 100px;
-    grid-row-gap: 13px;
-    grid-column-gap: 13px;
-    grid-template-columns: 24.34% 24.34% 24.34% 24.34%;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    font-family: 'Rubik Bubbles', cursive;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:  "prof head head head" "prof nav nav nav" "as main main main" "foot foot foot foot";
 }
 header{
@@ -17,7 +18,20 @@ header{
   text-align: center;
   border: 1px solid white;
   color: white;
-    background: black;
+  padding-top: 3%;
+  list-style-type:none;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background: black;
+}
+.al{
+color:white;
+text-decoration:none;
+}
+.al:hover{
+color:white;
+text-decoration:none;
 }
 .profile{
 grid-area:prof;
@@ -42,7 +56,7 @@ background: black;
 aside{
 grid-area: as;
 text-align:center;
-padding-top: 450px;
+padding-top: 50px;
 border: 1px solid white;
 color: white;
 background: black;
@@ -88,9 +102,6 @@ padding-top:80px;
   border-radius: 100%;
   border: 1px solid white;
 }
-
-
-
 
 html, body {
 	font-family: 'Arial';
