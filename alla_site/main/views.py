@@ -5,7 +5,7 @@ def home_page(request):
     context = {
         'title': 'Главная страница'
     }
-    return render(request, 'main/layout.html', context=context)
+    return render(request, 'main/index.html', context=context)
 
 def show_category(request):
     return HttpResponse('категории')
