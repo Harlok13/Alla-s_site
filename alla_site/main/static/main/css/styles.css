@@ -9,7 +9,6 @@ body{
     grid-template-rows: 100px 300px 1000px 100px;
     grid-row-gap: 2px;
     grid-column-gap: 2px;
-    font-family: 'Rubik Bubbles', cursive;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:  "prof head head head" "prof nav nav nav" "as main main main" "foot foot foot foot";
 }
@@ -17,6 +16,8 @@ header{
   grid-area: head;
   text-align: center;
   border: 1px solid white;
+  font-family: 'Rubik Bubbles', cursive;
+  padding-left: 2   %;
   color: white;
   padding-top: 3%;
   list-style-type:none;
@@ -101,6 +102,7 @@ padding-top:80px;
   height: 100px;
   border-radius: 100%;
   border: 1px solid white;
+  background: url("main/images/Alla.jpg");
 }
 
 html, body {
