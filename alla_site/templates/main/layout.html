@@ -9,6 +9,9 @@
   <meta name= "viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link type="text/css" href="{% static 'main/css/styles.css' %}" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->
@@ -24,16 +27,13 @@
       {% block mainmenu %}
         {% show_menu %}
       {% endblock mainmenu %}
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
     </header>
 {#    Profile#}
-    <div class="profile"><div class="cirkel"></div><h1>Alla Krasnova</h1><p>МГУ им.твоего сердечка</p></div>
+    <div class="profile">
+        <div class="cirkel"><img class="imA" src="{% static 'main/images/Alla.jpg' %}"></div>
+        <h1>Alla Krasnova</h1>
+        <p>МГУ им.твоего сердечка</p>
+    </div>
 {#    Aside#}
     <aside style="padding-top: 45px;">
      <ul class="list-articles">
@@ -50,10 +50,11 @@
             <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
 
           {% endfor %}
+     </ul>
     </aside>
 {#    Nav#}
     <nav>
-      <div class="img1" style="padding-top: 0px"><img style="height: 6.5cm" src="{% static 'main/images/i1.jpg' %}" alt=""></div>
+      <div class="img1" style="padding-top: 0px"><img class="im5" style="height: 6.5cm" src="{% static 'main/images/i1.jpg' %}" alt=""><h2>Aboba</h2></div>
       <div class="img2"><h1>img2</h1></div>
       <div class="img3"><h1>img3</h1></div>
 
