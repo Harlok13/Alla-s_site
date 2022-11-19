@@ -1,0 +1,61 @@
+.body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.left__bar {
+    background-color:#202020;
+}
+.left__bar-image {
+    margin-bottom: 69px;
+
+}
+.left__bar-name {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding: 0 0 3px 0;
+    margin: 0;
+}
+.left__bar-prof {
+    color: #DEDEDE;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.left__bar-icons {
+    list-style: none;
+    display: flex;
+    padding:  17px 0 60px 93px;
+    margin: 0;
+    position: relative;
+}
+.left__bar-icons::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 260px;
+    background-color: #ffffff;
+    z-index: 1;
+    top: 75px;
+    left: 19px;
+}
+.left__bar-icon {
+    margin-right: 15px;
+}
+
+.left__bar-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 260px;
+    margin-left: 20px;
+}
