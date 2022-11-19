@@ -1,0 +1,43 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+     <link type="text/css" href="{% static 'main/css/newstyles.css' %}" rel="stylesheet" />
+</head>
+<body class="body">
+    <div class="left__bar">
+        <img class="left__bar-image" src="{% static 'main/images/background.jpg' %}" alt="header image" >
+        <h3 class="left__bar-name">Алла Краснова</h3>
+        <h5 class="left__bar-prof">МГУ им.твоего сердечка</h5>
+        <ul class="left__bar-icons">
+            <li class="left__bar-icon"><a class="lefet__bar-link" href="#">
+                <img class="left__bar-icon--image" src="{% static 'main/images/inst.svg' %}" alt="instagram icon" >
+            </a>
+            </li>
+            <li class="left__bar-icon"><a class="lefet__bar-link" href="#">
+                <img class="left__bar-icon--image" src="{% static 'main/images/vk.svg' %}" alt="VK icon" >
+            </a>
+            </li>
+            <li class="left__bar-icon"><a class="lefet__bar-link" href="#">
+                <img class="left__bar-icon--image" src="{% static 'main/images/pint.svg' %}" alt="pinterest icon" >
+            </a>
+            </li>
+        </ul>
+        <p class="left__bar-text">
+            Front-end разработчик. Практик верстки сайтов.
+Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
+        </p>
+    </div>
+    <div class="inner">
+
+    </div>
+</body>
+<script src="{% static 'main/js/main.js' %}"></script>
+</html>
