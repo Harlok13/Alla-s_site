@@ -64,7 +64,21 @@
     </nav>
 {#    Main#}
     <main>
+     <ul class="list-articles">
+          {% for p in posts %}
+            {% if p.photo %}
+              <p><img class="img-article-left thumb" src="{{ p.photo.url }}" alt="{{ p.title }}"></p>
+            {% endif %}
 
+            <h2>{{ p.title }}</h2>
+
+            {{ p.content|linebreaks|truncatewords:50 }}
+
+            <div class="clear"></div>
+            <p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
+
+          {% endfor %}
+     </ul>
     </main>
 {#    Footer#}
     <footer><h1>footer</h1></footer>
