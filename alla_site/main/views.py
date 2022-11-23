@@ -12,7 +12,7 @@ def home_page(request):
         'posts': posts,
         'post_limit': post_limit
     }
-    return render(request, 'main/index.html', context=context)
+    return render(request, 'main/new.html', context=context)
 
 def show_category(request):
     return HttpResponse('категории')
@@ -44,5 +44,8 @@ def show_post(request, post_slug):
         'post': post,
         'title': post.title,
     }
-
     return render(request, 'main/post.html', context=context)
+
+
+def page404(request, *args, **argv):
+    return render(request, '404.html')
