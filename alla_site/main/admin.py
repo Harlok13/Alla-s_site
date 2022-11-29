@@ -15,7 +15,8 @@ class PostsAdmin(admin.ModelAdmin):
 
 class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
-
+    list_display = ('name',)
+    list_display_links = ('name',)
 
 
 admin.site.register(Posts, PostsAdmin)
