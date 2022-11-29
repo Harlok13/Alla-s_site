@@ -8,6 +8,8 @@ class PostsAdmin(admin.ModelAdmin):
     list_display = ('title', 'time_create', 'time_update', 'photo', 'is_published')
     list_display_links = ('title', 'id')
     list_editable = ('is_published',)
+    search_fields = ('title', 'content')
+    list_filter = ('time_create', 'time_update', 'is_published')
 
 
 
